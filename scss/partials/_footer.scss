@@ -1,0 +1,56 @@
+$bgcolor: red;
+$webWidth: 1000px;
+
+.menu {
+  li {
+    display: inline-block;
+    padding-left: 10px;
+    background-color: $bgcolor;
+  }
+}
+
+header {
+  border: 1px solid $bgcolor;
+}
+
+.main-width {
+  width: $webWidth;
+}
+
+section {
+   li {
+    > a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+section {
+  ul {
+    li {
+      &:first-child {
+      color: orange;
+      }
+      &:last-child {
+      color: green;
+      }
+    }
+  }
+}
+
+footer {
+  li {
+    display: inline-block;
+    float: left;
+      &:hover {
+        color: blue;
+      }
+      &:last-child {
+        float: right;
+      }
+  }
+}
